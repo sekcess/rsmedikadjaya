@@ -1,0 +1,8 @@
+.git
+.gitignore
+.idea
+node_modules
+debug
+.editorconfig
+.nyc_output
+coverage

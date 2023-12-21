@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "KantorDesaKualDua",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "NAMOBJ": "Kantor Desa Kuala Dua", "FGSGOV": 10, "LUAS": 0.0, "FCODE": null, "REMARK": "Kantor Kepala Desa", "SRS_ID": null, "LCODE": "GD0020", "METADATA": null }, "geometry": { "type": "Point", "coordinates": [ 109.418097861000035, -0.15259674899994, 3.277799999996205 ] } }
+]
+}
