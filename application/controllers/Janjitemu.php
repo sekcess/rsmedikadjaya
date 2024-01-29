@@ -133,7 +133,7 @@ class Janjitemu extends CI_Controller
 
             // FILE 1
             $config = array(
-                'upload_path' => FCPATH . './uploads/berkas/',
+                'upload_path' => FCPATH . '/uploads/berkas/',
                 'allowed_types' => "gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF",
                 'max_size' => "26200",
             );
@@ -159,12 +159,12 @@ class Janjitemu extends CI_Controller
         // die;
 
         $this->pengajuan_track->insert_p_janji($data);
-        $this->session->set_flashdata('success', '<div class="mt-5 alert alert-success alert-dismissible"><h5><i class="icon fas fa-check"></i> Selamat!</h5> Berhasil Mengajukan Janji! Berikut <b>ID</b> anda: <b>' . $id . '</b></div>');
+        $this->session->set_flashdata('success', '<div class="mt-5 alert alert-success alert-dismissible"><h5><i class="icon fas fa-check"></i> Selamat!</h5> Berhasil Mengajukan Janji! Berikut <b>ID</b> anda, simpan id berikut untuk melakukan pelacakan: <b>' . $id . '</b></div>');
         redirect(base_url("janjitemu"));
     }
 
     function download()
     {
-        $data["files"] = directory_map("./uploads/berkas");
+        $data["files"] = directory_map("/uploads/berkas");
     }
 }

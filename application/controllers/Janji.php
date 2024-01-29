@@ -49,7 +49,7 @@ class Janji extends CI_Controller
             $keterangan_janji =  $this->input->post("keterangan_janji", TRUE);
             // $file_surat =  $this->input->post("file_surat", TRUE);
 
-            $config['upload_path']          = './uploads/janji_masuk';
+            $config['upload_path']          = '/uploads/janji_masuk';
             $config['allowed_types']        = 'gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF';
             $config['max_size']             = '26200';
             $this->load->library('upload', $config);
@@ -78,7 +78,7 @@ class Janji extends CI_Controller
 
         $data = $this->db->get_where('janji_masuk', ['id_janji_masuk' => $id])->row_array();
 
-        unlink("uploads/janji_masuk/" . $data['file_janji_masuk']);
+        unlink("/uploads/janji_masuk/" . $data['file_janji_masuk']);
 
         $this->db->where(['id_janji_masuk' => $id]);
 
@@ -113,14 +113,14 @@ class Janji extends CI_Controller
             $keterangan_janji =  $this->input->post("keterangan_janji", TRUE);
             // $file_surat =  $this->input->post("file_surat", TRUE);
 
-            $config['upload_path']          = './uploads/janji_masuk';
+            $config['upload_path']          = '/uploads/janji_masuk';
             $config['allowed_types']        = 'gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF';
             $config['max_size']             = '26200';
             $this->load->library('upload', $config);
 
             if ($this->upload->do_upload('file_janji')) {
                 $data = $this->db->get_where('janji_masuk', ['id_janji_masuk' => $id])->row_array();
-                unlink("uploads/janji_masuk/" . $data['file_janji_masuk']);
+                unlink("/uploads/janji_masuk/" . $data['file_janji_masuk']);
 
                 $data = array('upload_data' => $this->upload->data());
                 $file_janji = $data['upload_data']['file_name'];
@@ -187,7 +187,7 @@ class Janji extends CI_Controller
             $keterangan_janji =  $this->input->post("keterangan_janji", TRUE);
             // $file_janji =  $this->input->post("file_janji", TRUE);
 
-            $config['upload_path']          = './uploads/janji_keluar';
+            $config['upload_path']          = '/uploads/janji_keluar';
             $config['allowed_types']        = 'gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF';
             $config['max_size']             = '26200';
             $this->load->library('upload', $config);
@@ -216,7 +216,7 @@ class Janji extends CI_Controller
 
         $data = $this->db->get_where('janji_keluar', ['id_janji_keluar' => $id])->row_array();
 
-        unlink("uploads/janji_keluar/" . $data['file_janji_keluar']);
+        unlink("/uploads/janji_keluar/" . $data['file_janji_keluar']);
 
         $this->db->where(['id_janji_keluar' => $id]);
 
@@ -251,7 +251,7 @@ class Janji extends CI_Controller
             $keterangan_janji =  $this->input->post("keterangan_janji", TRUE);
             // $file_janji =  $this->input->post("file_janji", TRUE);
 
-            $config['upload_path']          = './uploads/janji_keluar';
+            $config['upload_path']          = '/uploads/janji_keluar';
             $config['allowed_types']        = 'gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF';
             $config['max_size']             = '26200';
             $this->load->library('upload', $config);
@@ -326,7 +326,7 @@ class Janji extends CI_Controller
             $keterangan_janji =  $this->input->post("keterangan_janji", TRUE);
             // $file_janji =  $this->input->post("file_janji", TRUE);
 
-            $config['upload_path']          = './uploads/janji_keterangan';
+            $config['upload_path']          = '/uploads/janji_keterangan';
             $config['allowed_types']        = 'gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF';
             $config['max_size']             = '26200';
             $this->load->library('upload', $config);
@@ -355,7 +355,7 @@ class Janji extends CI_Controller
 
         $data = $this->db->get_where('janji_keterangan', ['id_janji_keterangan' => $id])->row_array();
 
-        unlink("uploads/janji_keterangan/" . $data['file_janji_keterangan']);
+        unlink("/uploads/janji_keterangan/" . $data['file_janji_keterangan']);
 
         $this->db->where(['id_janji_keterangan' => $id]);
 
@@ -390,7 +390,7 @@ class Janji extends CI_Controller
             $keterangan_janji =  $this->input->post("keterangan_janji", TRUE);
             // $file_janji =  $this->input->post("file_janji", TRUE);
 
-            $config['upload_path']          = './uploads/janji_keterangan';
+            $config['upload_path']          = '/uploads/janji_keterangan';
             $config['allowed_types']        = 'gif|jpg|png|jpeg|JPEG|JPG|PNG|GIF';
             $config['max_size']             = '26200';
             $this->load->library('upload', $config);
@@ -544,7 +544,7 @@ class Janji extends CI_Controller
 
         $data = $this->db->get_where('pengajuan_janji', ['id' => $id])->row_array();
 
-        unlink("uploads/berkas/" . $data['file']);
+        unlink("/uploads/berkas/" . $data['file']);
 
         $this->db->where(['id' => $id]);
 

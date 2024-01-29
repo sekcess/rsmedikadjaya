@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <label for="nama">Nama Lengkap *</label>
-                    <?= form_input(['name' => 'nama', 'id' => 'nama', 'class' => 'form-control', "required" => "required", 'placeholder' => 'Silahkan masukkan nama lengkap anda']); ?>
+                    <?= form_input(['name' => 'nama', 'id' => 'nama', 'class' => 'form-control', "required" => "required", 'placeholder' => 'Silahkan masukkan nama lengkap anda', 'autocomplete' => 'off']); ?>
                 </div>
                 <div class="col-lg-6 mt-2">
                     <label for="no_hp">No Hp *</label>

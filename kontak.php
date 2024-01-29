@@ -35,28 +35,30 @@
 
 </head>
 
-    <style>
-        .blink {
-                animation: blink 1s infinite;
-            }
-            
-        .biru{
-			color: #1977cc;
-		}
+<style>
+    .blink {
+        animation: blink 1s infinite;
+    }
 
-        @keyframes blink {
-            0% {
-                opacity: 1;
-            }
-            50% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+    .biru {
+        color: #1977cc;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
         }
-    </style>
-    
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
 <!-- ======= Top Bar ======= -->
 <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-between">
@@ -78,131 +80,131 @@
     <div class="container d-flex align-items-center">
 
         <!-- logo -->
-        <a href="/" class="logo me-2"><img style="width:60px;height:220px;" src="template/assets/img/logors.png"></a>
-        <a href="/">
+        <a href="/rsmedikadjaya" class="logo me-2"><img style="width:60px;height:220px;" src="template/assets/img/logors.png"></a>
+        <a href="/rsmedikadjaya">
             <h1 class="logo me-auto" style="color: #1977cc;">RUMAH SAKIT MEDIKA DJAYA</h1>
         </a>
 
         <nav id="navbar" class="navbar order-last order-lg-0 px-5">
             <ul>
-                    <li class="nav-link">
-                        <a href="/">Beranda
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="/rsmedikadjaya">Beranda
+                    </a>
+                </li>
 
-                    <li class="nav-link">
-                        <a href="profil">Tentang Kami
-                        </a>
-                    </li>
+                <li class="nav-link">
+                    <a href="profil">Tentang Kami
+                    </a>
+                </li>
 
-                    <li class="dropdown">
-					            <a class="<?php if ($title == 'Dokter') : ?>
+                <li class="dropdown">
+                    <a class="<?php if ($title == 'Dokter') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="#"><span>Dokter</span> <i class="bi bi-chevron-down"></i>
-						        </a>
-                        <ul>
-                            <li>
-                                <a class="<?php if ($title == 'Dokter') : ?>
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="<?php if ($title == 'Dokter') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="dokter/jadwal_dokter">Jadwal Dokter
-						        </a>
-						    </li>
-                            <li>
-                                <a class="<?php if ($title == 'Dokter') : ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="<?php if ($title == 'Dokter') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="dokter/kategori/1">Dokter Spesialis
-						        </a>
-						    </li>
-                            <li>
-                                <a class="<?php if ($title == 'Dokter') : ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="<?php if ($title == 'Dokter') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="dokter/kategori/2">Dokter Umum
-						        </a>
-						    </li>
-                        </ul>
-                    </li>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-                    <li class="dropdown">
-					            <a class="<?php if ($title == 'Layanan') : ?>
+                <li class="dropdown">
+                    <a class="<?php if ($title == 'Layanan') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i>
-						        </a>
-                        <ul>
-                            <li>
-                                <a class="<?php if ($title == 'Layanan') : ?>
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="<?php if ($title == 'Layanan') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="ruangan/kategori_ruangan/3">Rehabilitasi Medik
-						        </a>
-						    </li>
-                            <li>
-                                <a class="<?php if ($title == 'Layanan') : ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="<?php if ($title == 'Layanan') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="ruangan/kategori_ruangan/2">Rawat Inap
-						        </a>
-						    </li>
-						    <li>
-                                <a class="<?php if ($title == 'Layanan') : ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="<?php if ($title == 'Layanan') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="ruangan/kategori_ruangan/1">Poliklinik
-						        </a>
-						    </li>
-						    <div class="list-group-item-primary">
-						        <li>
-                                    <a><span class="blink biru"><b>Pelayanan 24 Jam</b></span></a>
-                                </li>
-                                <li>
-                                    <a class="<?php if ($title == 'Layanan') : ?>
+                            </a>
+                        </li>
+                        <div class="list-group-item-primary">
+                            <li>
+                                <a><span class="blink biru"><b>Pelayanan 24 Jam</b></span></a>
+                            </li>
+                            <li>
+                                <a class="<?php if ($title == 'Layanan') : ?>
                                         <?= 'active'; ?>
 						                <?php endif; ?>" href="ruangan/kategori_ruangan24/5">Farmasi
-						            </a>
-						        </li>
-						        <li>
-                                    <a class="<?php if ($title == 'Layanan') : ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="<?php if ($title == 'Layanan') : ?>
                                         <?= 'active'; ?>
 						                <?php endif; ?>" href="ruangan/kategori_ruangan24/4">Radiologi
-						            </a>
-						        </li>
-						        <li>
-                                    <a class="<?php if ($title == 'Layanan') : ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="<?php if ($title == 'Layanan') : ?>
                                         <?= 'active'; ?>
 						                <?php endif; ?>" href="ruangan/kategori_ruangan24/3">Laboratorium
-						            </a>
-						        </li>
-						        <li>
-                                    <a class="<?php if ($title == 'Layanan') : ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="<?php if ($title == 'Layanan') : ?>
                                         <?= 'active'; ?>
 						                <?php endif; ?>" href="ruangan/kategori_ruangan24/1">IGD & ICU
-						            </a>
-						        </li>
-						    </div>
-                        </ul>
-                    </li>
-                    
-					<li class="dropdown">
-					            <a class="<?php if ($title == 'Lain') : ?>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="<?php if ($title == 'Lain') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="#"><span>Lain-Lain</span> <i class="bi bi-chevron-down"></i>
-						        </a>
-                        <ul>
-                            <li>
-                                <a class="<?php if ($title == 'Lain') : ?>
+                    </a>
+                    <ul>
+                        <li>
+                            <a class="<?php if ($title == 'Lain') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="kerjasama">Rekan Kerjasama
-						        </a>
-						    </li>
-                            <li>
-                                <a class="<?php if ($title == 'Lain') : ?>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="<?php if ($title == 'Lain') : ?>
                                     <?= 'active'; ?>
 						            <?php endif; ?>" href="kerjasama/karir">Karir
-						        </a>
-						    </li>
-                        </ul>
-                    </li>
-                    
-                    <li><a class="active" href="kontak.php">Kontak Kami
-						</a>
-					</li>
-					
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a class="active" href="kontak.php">Kontak Kami
+                    </a>
+                </li>
+
 
                 <!--<li>-->
                 <!--    <a href="umum/janjitemu">Buat Janji Temu-->
@@ -223,19 +225,19 @@
 </header><!-- End Header -->
 
 <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+<section class="breadcrumbs">
+    <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2><b>Kontak Kami</b></h2>
-          <ol>
-            <li><a href="/">Home</a></li>
-            <li>Kontak Kami</li>
-          </ol>
+            <h2><b>Kontak Kami</b></h2>
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li>Kontak Kami</li>
+            </ol>
         </div>
 
-      </div>
-    </section>
+    </div>
+</section>
 <!-- End Breadcrumbs Section -->
 
 <!-- ======= Contact Section ======= -->

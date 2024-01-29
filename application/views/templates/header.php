@@ -133,7 +133,7 @@
 										<span class="sidebar-normal">Pengajuan Janji Masuk</span>
 									</a>
 								</li>
-								<li class="
+								<!-- <li class="
                                 <?php if ($sub_title == 'Janji Masuk') : ?>
                                     <?= 'active'; ?>
                                 <?php endif; ?>
@@ -162,7 +162,7 @@
 										<span class="sidebar-mini">KJ</span>
 										<span class="sidebar-normal">Keterangan Janji</span>
 									</a>
-								</li>
+								</li> -->
 
 							</ul>
 						</div>
@@ -180,52 +180,52 @@
 
 					<?php if ($this->session->userdata('level') == 'administrator') : ?>
 
-                    <li class="
+						<li class="
 						<?php if ($title == 'Kategori') : ?>
 							<?= 'active'; ?>
 						<?php endif; ?>
 						">
-						<a data-toggle="collapse" href="#formsExamples">
-							<i class="fa-solid fa-id-card-clip"></i>
-							<p>Kategori
-								<b class="caret"></b>
-							</p>
-						</a>
-						<div class="
+							<a data-toggle="collapse" href="#formsExamples">
+								<i class="fa-solid fa-id-card-clip"></i>
+								<p>Kategori
+									<b class="caret"></b>
+								</p>
+							</a>
+							<div class="
                         <?php if ($title == 'Kategori') : ?>
                             <?= 'collapse in'; ?>
                         <?php else : ?>
                             <?= 'collapse'; ?>
                         <?php endif; ?>
                         " id="formsExamples">
-							<ul class="nav">
-							    
-							<li class="
+								<ul class="nav">
+
+									<li class="
                                 <?php if ($sub_title == 'Kategori Dokter') : ?>
                                     <?= 'active'; ?>
                                 <?php endif; ?>
                             ">
-							    <a href="<?= base_url() ?>kategori/kategori_dokter">
-								    <i class="fa-solid fa-id-card-clip"></i>
-								    <p>Kategori Dokter</p>
-						    	</a>
-						    </li>
-							    
-							<li class="
+										<a href="<?= base_url() ?>kategori/kategori_dokter">
+											<i class="fa-solid fa-id-card-clip"></i>
+											<p>Kategori Dokter</p>
+										</a>
+									</li>
+
+									<li class="
                                 <?php if ($sub_title == 'Kategori Spesialis') : ?>
                                     <?= 'active'; ?>
                                 <?php endif; ?>
                             ">
-							    <a href="<?= base_url() ?>kategori/kategori_spesialis">
-								    <i class="fa-solid fa-id-card-clip"></i>
-								    <p>Kategori Spesialis</p>
-						    	</a>
-						    </li>
-								
-							</ul>
-						</div>
-					</li>
-                        
+										<a href="<?= base_url() ?>kategori/kategori_spesialis">
+											<i class="fa-solid fa-id-card-clip"></i>
+											<p>Kategori Spesialis</p>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
 						<li class="
                         <?php if ($title == 'Management Pegawai') : ?>
                             <?= 'active'; ?>
@@ -249,8 +249,8 @@
 						</li>
 
 					<?php endif; ?>
-					
-					
+
+
 					<li class="
 						<?php if ($title == 'Ruangan') : ?>
 							<?= 'active'; ?>
@@ -270,8 +270,8 @@
                         <?php endif; ?>
                         " id="ruanganExamples">
 							<ul class="nav">
-							    
-							    <li class="
+
+								<li class="
                                 <?php if ($sub_title == 'Kategori Ruangan') : ?>
                                     <?= 'active'; ?>
                                 <?php endif; ?>
@@ -281,7 +281,7 @@
 										<span class="sidebar-normal">Kategori Ruangan</span>
 									</a>
 								</li>
-							    
+
 								<li class="
                                 <?php if ($sub_title == 'Kategori Ruangan 24 Jam') : ?>
                                     <?= 'active'; ?>
@@ -292,7 +292,7 @@
 										<span class="sidebar-normal">Kategori Ruangan 24 Jam</span>
 									</a>
 								</li>
-								
+
 								<li class="
                                 <?php if ($sub_title == 'Data Ruangan') : ?>
                                     <?= 'active'; ?>
@@ -303,31 +303,31 @@
 										<span class="sidebar-normal">Data Ruangan</span>
 									</a>
 								</li>
-								
+
 							</ul>
 						</div>
 					</li>
-					
+
 					<li class="
                         <?php if ($title == 'Rekan Kerjasama') : ?>
                             <?= 'active'; ?>
                         <?php endif; ?>
                             ">
-							<a href="<?= base_url() ?>rekan">
-								<i class="fa-solid fa-users"></i>
-								<p>Rekan Kerjasama</p>
-							</a>
+						<a href="<?= base_url() ?>rekan">
+							<i class="fa-solid fa-users"></i>
+							<p>Rekan Kerjasama</p>
+						</a>
 					</li>
-					
+
 					<li class="
                         <?php if ($title == 'Karir') : ?>
                             <?= 'active'; ?>
                         <?php endif; ?>
                             ">
-							<a href="<?= base_url() ?>karir">
-								<i class="fa-solid fa-book-medical"></i>
-								<p>Karir</p>
-							</a>
+						<a href="<?= base_url() ?>karir">
+							<i class="fa-solid fa-book-medical"></i>
+							<p>Karir</p>
+						</a>
 					</li>
 
 					<?php if ($this->session->userdata('id_user') == TRUE) : ?>
